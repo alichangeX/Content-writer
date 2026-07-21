@@ -1,6 +1,6 @@
 # Betreffzeilen-Hooks für den Newsletter
 
-Der Betreff entscheidet, ob die Ausgabe überhaupt gelesen wird. Diese Referenz überträgt die bewährten Hook-Frameworks aus `changexperten-linkedin-christoph` auf die engeren Regeln einer E-Mail-Betreffzeile. Sie ist zugleich der Ort, an dem später die Moby-Digg-Hook-Logik eingemischt wird, sobald sie vorliegt (siehe Hinweis am Ende).
+Der Betreff entscheidet, ob die Ausgabe überhaupt gelesen wird. Diese Referenz überträgt die bewährten Hook-Frameworks aus `changexperten-linkedin-christoph` auf die engeren Regeln einer E-Mail-Betreffzeile und ergänzt sie um die Angle-Transpositions-Methode aus dem Moby-Digg-Ansatz (für redaktionellen Content adaptiert, siehe unten). Damit ist die Hook-Logik über Newsletter und LinkedIn hinweg vereinheitlicht.
 
 ## Die harten Rahmenbedingungen (anders als bei LinkedIn)
 
@@ -70,6 +70,44 @@ Kein Zwang, nur ein Startpunkt. Immer 3–5 Varianten aus unterschiedlichen Type
 3. Alle gegen die Rahmenbedingungen prüfen: Länge, keine Spam-Trigger, kein Angebot verraten, kein Gedankenstrich
 4. Auf Christophs Auswahl warten, dann erst den Volltext schreiben
 
-## Hinweis: Moby-Digg-Logik
+## Die Angle-Transposition (Generierungs-Methode aus Moby Digg, für Content adaptiert)
 
-Christoph möchte die Hook-Logik aus dem Moby-Digg EO-Crash-Course (Performance Marketing) für Betreffzeilen nutzen. Dieses Material lag beim Umbau nicht vollständig vor. Sobald es verfügbar ist, wird es hier eingearbeitet: die für Ads formulierten Hook-Prinzipien werden auf die Betreff-Rahmenbedingungen oben übertragen und mit den bestehenden Hook-Typen abgeglichen (Dubletten zusammenführen, echte Ergänzungen als neue Typen aufnehmen). Bis dahin ist dieses Framework eigenständig einsatzfähig.
+Die sechs Hook-Typen oben sagen, *welche* Sorte Betreff es gibt. Die Transposition sagt, *wie man sie systematisch erzeugt*, statt auf Eingebung zu warten. Sie stammt aus dem Moby-Digg-Ansatz für Performance-Marketing und ist hier auf redaktionellen Newsletter-Content übertragen (kein Verkaufs-, sondern Wert-Kontext). Dieselbe Methode nutzt der LinkedIn-Skill für die Post-Hooks – so ist die Hook-Logik über beide Kanäle vereinheitlicht.
+
+Ablauf in vier Schritten:
+
+1. **Ein Pain isolieren.** Genau ein abgegrenzter Schmerzpunkt des Lesers (das Problem P der Ausgabe). Nicht zwei vermischen – ein Pain ist eine eigene „Interessensinsel".
+2. **8–12 Keywords zum Pain sammeln.** Die echten Worte, Redewendungen und Fachbegriffe, die die Zielgruppe (GF/HR/Führungskräfte) zu diesem Pain benutzt. Möglichst unterschiedliche. Beispiel Pain „verdeckter Widerstand im Change": nicken, abtauchen, Dienst nach Vorschrift, Schweigen im Meeting, Scheinkonsens, Bedenkenträger, Mitziehen, Blockade.
+3. **Mit dem Angle „Lösung" starten.** Satz mit „So…" beginnen und ein Keyword einsetzen: „So erkennst du den Scheinkonsens in deinem Team." Dann 3–5 solcher Lösungs-Betreffe schreiben, jeweils ein anderes Keyword im Zentrum.
+4. **Denselben Keyword-Kern auf andere Angles umdeklinieren** – Sinn und Keyword bleiben, nur die Ansprache wechselt. Aus „So erkennst du den Scheinkonsens" wird im Angle Problem: „Warum nickt dein Team und ändert dann nichts?", im Angle Steile These: „Der gefährlichste Widerstand ist der, der zustimmt." Wichtig: Sortenreinheit – ein Betreff bleibt sauber in einem Angle, nicht mischen.
+
+Zum Schluss jeden Betreff auf 40–60 Zeichen kürzen und das zentrale Keyword nach vorne stellen (im Ad-Original wird es unterstrichen; im Betreff heißt das: es steht möglichst am Anfang, wo es auch mobil sichtbar ist).
+
+## Content-taugliche Angles (aus der Moby-Digg-Angle-Database gefiltert)
+
+Die Original-Database hat 21 Angles, viele davon transaktional (Ads). Für wert-orientierten Newsletter-Content behalten wir nur die erkenntnis- und problembasierten und ordnen sie den sechs Hook-Typen oben zu. Die transaktionalen sind bewusst gestrichen.
+
+Behalten und nutzbar:
+- **Problem** („Warum nickt dein Team und ändert nichts?") → Hook-Typ Leser-Realität / konkrete Frage
+- **Lösung** („So erkennst du…") → der Arbeitspferd-Angle für Betreffe, Start jeder Transposition
+- **Bold Claim → Steile These** („Der gefährlichste Widerstand stimmt zu.") → Hook-Typ Contrarian / kognitive Dissonanz
+- **Angst → Kosten des Nichthandelns** („Was stiller Widerstand dein Projekt kostet.") → sachlich, nie Angstmache; Hook-Typ Ergebnis mit Zahl, wenn belegbar
+- **Social Proof** (echte Zahl/Fall: „64% bessere Gespräche mit einer Frage") → Hook-Typ Ergebnis mit Zahl
+- **Autorität** (sehr sparsam, sonst angeberisch: „Nach 2.500 begleiteten Führungskräften…") → nur wenn es die Aussage trägt
+- **Market Callout** („Für Geschäftsführer im Mittelstand:") → Zielgruppen-Direktansprache, gut kombinierbar
+- **Innovation/Trend → Context Aware** (aktuelles Thema/Studie aufgreifen) → Hook-Typ Neugierlücke
+- **How-To** („So führst du das Gespräch, das keiner führen will") → Lösungs-Angle-Variante
+- **Herausforderung** („Stell dich dem Gespräch, das du aufschiebst") → aktivierend
+
+Gestrichen für Content (widersprechen Value-first): Preis, Timing/Countdown, Gratis-Test als Hook, Exklusiver Zugang, Produktvergleiche, Individualität/Konfigurator, Finanzielle Anreize/Cashback, Quizbasierte Rabatte, UGC-Aufruf. Der kostenlose Test bleibt ausschließlich Contextual-CTA im Volltext (Angle O), nie als Betreff-Hook.
+
+## Vier Content-Prinzipien (aus den Moby-Digg Creative Principles)
+
+Nicht jedes der acht Ad-Prinzipien passt; diese vier gelten für unseren Content und ergänzen die Betreff-Arbeit:
+
+1. **Value Exchange:** Jede Ausgabe gibt echten Wert (Haltung: persönlicher Coach des Lesers, nicht Werber). Deckt sich mit dem Academy-Versprechen.
+2. **Emotional & relatable:** Den Pain fühlbar machen, nicht nur benennen. Zusammen mit der Leser-Emotion aus dem Volltext.
+3. **Context Aware:** Aktuelle Trends und das, was die Zielgruppe gerade auf LinkedIn teilt, aufgreifen – erhöht Relevanz und Öffnung.
+4. **Auf Gewinnern aufbauen:** Betreffe/Themen, die messbar gut liefen (CTR), als Spin-off variieren, statt jedes Mal bei null zu starten. Die Winner-Angles im nächsten Monat erneut bespielen.
+
+Gut-Test zum Schluss, wie im Original: Würdest du diese Mail selbst öffnen und gern lesen?

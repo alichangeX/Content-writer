@@ -18,6 +18,10 @@ compatibility: Designed for Claude or similar AI agents.
 
 Nutze `changexperten-brand` für Markenfarben/-logo, falls im selben Auftrag auch visuelle Assets gebraucht werden. Dieser Skill deckt ausschließlich den Text- und Strategieprozess für **Christophs persönliches Profil** ab (nicht das Firmenprofil).
 
+## Wirkungsziel (Nordstern für jeden Post)
+
+Jeder Post soll beim Ziel-Leser genau diese Kette auslösen: **erst nachvollziehen** („so ist es wirklich"), **dann sich angesprochen fühlen** („das bin ich / mein Alltag"), **dann sich zum Kommentieren berufen fühlen** – entweder zustimmend („da hat er recht, das kenne ich") oder reibend („da habe ich andere Erfahrungen gemacht"). Reichweite ist nicht das Ziel, echte Resonanz und Interaktion sind es. Ein Post, den man nickend wegscrollt, hat versagt; ein Post, bei dem der Leser einen Kommentar tippen *will*, hat funktioniert. Jede Phase unten dient dieser Kette; im Zweifel ist die Frage „Würde mein Ziel-Leser das kommentieren wollen?" der Maßstab. Wie diese Wirkung handwerklich erzeugt wird: [references/leser-resonanz.md](references/leser-resonanz.md).
+
 ## Kontext, den du kennen musst
 
 **Zielgruppe:** Geschäftsführer, HR-Leitende, Führungskräfte im DACH-Mittelstand
@@ -66,7 +70,8 @@ Fehlt ein Pflichtpunkt: gezielt nachfragen, nicht einfach draufloslos schreiben.
 Frameworks und Beispiele: [references/hook-frameworks.md](references/hook-frameworks.md)
 
 Regeln:
-- 3–5 Hook-Varianten aus unterschiedlichen Frameworks vorschlagen
+- Empfohlener Startpunkt: die Angle-Transposition aus der Referenzdatei (Pain isolieren → 8–12 Keywords sammeln → mit „Lösung/So…" starten → Keyword-Kern auf andere Angles umdeklinieren). So entstehen die Varianten systematisch statt aus dem Bauch.
+- 3–5 Hook-Varianten aus unterschiedlichen Frameworks/Angles vorschlagen
 - Mindestens eine Variante muss aus der Leser-Realität starten (Framework G in der Referenzdatei), also aus der in Phase 1 gewählten inneren Lage des Lesers, nicht aus Christophs Szene. So merkt der Leser sofort, dass es um ihn geht.
 - 80/20-Regel: Ergebnis andeuten, Methode zurückhalten
 - Radikale Konkretheit (Zahlen, Zeiträume, Szenen, keine erfundenen Zahlen)

@@ -97,3 +97,41 @@ Keine starre Regel, aber eine bewährte Zuordnung als Startpunkt:
 Diese Zuordnung ist ein Startpunkt für Phase 2, kein Zwang. Wenn ein anderes Framework für die konkrete Geschichte besser passt, das nutzen.
 
 **Framework G (Leser-Realität) passt kategorieübergreifend** und ist als mindestens eine der 3–5 Hook-Varianten immer mitzuliefern, unabhängig von der Kategorie. Es ist der direkteste Weg zur Leser-Emotion.
+
+## Die Angle-Transposition (Generierungs-Motor)
+
+Die Frameworks oben sagen, *welche Sorten* Hooks es gibt. Die Transposition sagt, *wie du sie systematisch erzeugst*, statt auf Eingebung zu warten. Sie stammt aus dem Moby-Digg-Performance-Ansatz und ist hier auf redaktionellen Content adaptiert (Wert- statt Verkaufskontext). Derselbe Motor steckt im Newsletter-Skill (`betreff-hooks.md`) – so ist die Hook-Logik über beide Kanäle vereinheitlicht.
+
+Vier Schritte:
+
+1. **Einen Pain isolieren.** Genau ein abgegrenzter Schmerzpunkt des Ziel-Lesers (aus der inneren Lage in [leser-resonanz.md](leser-resonanz.md)). Ein Pain ist eine eigene „Interessensinsel" – nicht zwei vermischen. Das ist die Leitquellen-/Ein-Kernaussage-Regel in operativer Form.
+2. **8–12 Keywords zum Pain sammeln.** Die echten Worte, Redewendungen und Fachbegriffe, die GF/HR/Führungskräfte zu diesem Pain benutzen. Möglichst unterschiedliche. Beispiel Pain „verdeckter Widerstand im Change": nicken, abtauchen, Dienst nach Vorschrift, Schweigen im Meeting, Scheinkonsens, Bedenkenträger, Mitziehen, Blockade. Diese Keywords sind das Rohmaterial – sie stehen später prägnant im Hook.
+3. **Mit dem Angle „Lösung" starten.** Satz mit „So…" beginnen und ein Keyword einsetzen: „So erkennst du den Scheinkonsens in deinem Team, bevor er dein Projekt kippt." Schreibe so 3–5 Lösungs-Hooks, jeweils ein anderes Keyword im Zentrum.
+4. **Denselben Keyword-Kern auf andere Angles umdeklinieren** – Sinn und Keyword bleiben, nur die Ansprache wechselt. Aus dem Lösungs-Hook wird im Angle Problem: „Dein Team nickt in jedem Meeting. Und ändert danach nichts." Im Angle Steile These: „Der gefährlichste Widerstand im Change ist der, der zustimmt." Sortenreinheit: ein Hook bleibt sauber in einem Angle, nicht mischen.
+
+Wichtiger Unterschied zum Newsletter: Ein LinkedIn-Hook darf länger und szenischer sein als eine 40–60-Zeichen-Betreffzeile. Die Keyword-Sammlung und die Transposition bleiben identisch, nur die finale Ausformulierung nutzt den vollen szenischen Spielraum des Hooks (siehe Frameworks A–G).
+
+## Content-taugliche Angles (aus der Moby-Digg-Angle-Database gefiltert)
+
+Die Original-Database hat 21 Angles, viele davon transaktional (für Ads). Für wert-orientierten Content behalten wir nur die erkenntnis- und problembasierten und ordnen sie den Frameworks oben zu. Die transaktionalen sind bewusst gestrichen, weil sie dem Wirkungsziel (Resonanz, nicht Verkaufsdruck) widersprechen.
+
+Behalten:
+- **Problem** → Framework Leser-Realität / Fragen-Hook
+- **Lösung** („So…") → Start jeder Transposition, Basis für Actionable Guide
+- **Bold Claim → Steile These** → Framework Contrarian / Kognitive Dissonanz
+- **Angst → Kosten des Nichthandelns** (sachlich, nie Angstmache) → oft mit Zahl, Framework Brutal Social Proof
+- **Social Proof** (echte Zahl/Fall) → Framework Brutal Social Proof
+- **Autorität** (sehr sparsam) → nur wenn die Aussage es trägt, sonst angeberisch
+- **Market Callout** („Für Geschäftsführer im Mittelstand:") → Zielgruppen-Direktansprache
+- **Innovation/Trend → Context Aware** → aktuelles Thema/Studie aufgreifen
+- **How-To** → Lösungs-Angle-Variante
+- **Herausforderung** → aktivierend
+
+Gestrichen für Content: Preis, Timing/Countdown, Gratis-Test als Hook, Exklusiver Zugang, Produktvergleiche, Individualität/Konfigurator, Finanzielle Anreize/Cashback, Quizbasierte Rabatte, UGC-Aufruf. Der kostenlose Test/das Angebot bleibt ausschließlich Transfer/CTA am Ende des Posts, nie Hook.
+
+## Zwei Content-Prinzipien aus den Creative Principles (ergänzend)
+
+Aus den Moby-Digg Creative Principles sind für den Post-Text zwei über die Hook-Arbeit hinaus relevant (die übrigen betreffen Ad-Design und entfallen):
+
+- **Context Aware:** Greif auf, was die Zielgruppe *gerade* beschäftigt (aktuelle Studien, Debatten, das, was sie selbst auf LinkedIn teilt). Ein Post, der sich aktuell anfühlt, wird eher kommentiert.
+- **Auf Gewinnern aufbauen:** Hooks/Themen, die messbar gut liefen (siehe `performance-tracking.md`), als Spin-off variieren, statt jedes Mal bei null zu starten. Winner-Angle im Folgemonat erneut, mit neuem Keyword/Winkel.
