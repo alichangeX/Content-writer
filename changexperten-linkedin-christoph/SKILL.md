@@ -7,7 +7,8 @@ description: >
   werden soll, oder wenn Begriffe wie "LinkedIn-Post", "LinkedIn-Hook", "für Christophs LinkedIn",
   "Post für Christoph" fallen. Auch nutzen, wenn jemand eine Geschichte, ein Ergebnis oder eine
   Beobachtung teilt und daraus einen LinkedIn-Post machen will. Deckt den kompletten Prozess ab:
-  Themenfindung, strategisches Interview, Hook-Varianten, Volltext, Formatentscheidung und finalen Schliff.
+  Themenfindung, strategisches Interview, Hook-Varianten, Volltext, Formatentscheidung, Bildauswahl
+  aus dem Airtable-Bildindex und finalen Schliff.
 license: MIT
 compatibility: Designed for Claude or similar AI agents.
 ---
@@ -135,6 +136,31 @@ Details zur Algorithmus-Logik dahinter: [references/algorithmus-2026.md](referen
 
 Bei Carousel (Ausnahmefall): Slide-Outline liefern (Titel + Kernsatz pro Slide), keine fertige Grafik – die Gestaltung erfolgt separat in PowerPoint im Corporate Design.
 
+#### Bildauswahl aus dem Bildindex (Pflicht bei Format Text + Bild)
+
+Die Bildkandidaten kommen aus dem getaggten Bildindex in Airtable, nicht aus Ad-hoc-Suchen oder Stockfotos.
+
+**Datenquelle:**
+- Base „ChangeXperten" (`appb7eOfe2Au3Lp40`)
+- Tabelle „LinkedIn-Bilder" (`tblt8MncEzwvhIQ8C`)
+- Zielfeld am Content-Eintrag: „Bildvorschläge LinkedIn" (`fldBQwjgyFZw3SNwr`) in Tabelle „Content-Research" (`tblrCjOdKhI4YCPPR`)
+
+**Vorgehen:**
+
+1. **Suchbegriffe ableiten:** Aus dem finalen Post 2–4 Stichworte bilden. Primär aus dem Insight und der Kategorie (z. B. „Führung", „Workshop", „Veränderung", „Team"), nicht aus Nebendetails der Szene.
+2. **Bildindex durchsuchen:** Mit `search_records` in der Tabelle LinkedIn-Bilder suchen. Relevante Felder für den Abgleich, in dieser Priorität: Themen-Assoziation > Stimmung > Kategorie > Setting & Kontext. Bei weniger als 3 Treffern die Suche mit einem breiteren Begriff wiederholen.
+3. **Kandidaten filtern und ranken:**
+   - **Bildgruppe:** Nie zwei Kandidaten aus derselben Bildgruppe vorschlagen. Bildgruppen, deren Bilder zuletzt genutzt wurden (hoher Nutzungszähler oder kürzliches „Zuletzt genutzt"-Datum in der Gruppe), nachrangig behandeln.
+   - **Nutzungszähler:** Bei vergleichbarer inhaltlicher Passung gewinnt das Bild mit dem niedrigeren Zähler. Bilder mit Zähler 0 bevorzugen.
+   - **Stimmung vor Motiv:** Ein Bild, dessen Stimmung zum Ton des Posts passt (z. B. nachdenklich bei Leadership Thought, energetisch bei Company Wins), schlägt ein thematisch näheres Bild mit falscher Stimmung.
+4. **2–3 Kandidaten verlinken:** Die Record-IDs der Kandidaten in das Feld „Bildvorschläge LinkedIn" des zugehörigen Content-Research-Eintrags schreiben (`update_records_for_table`).
+5. **Kandidaten präsentieren:** Christoph/Ali die Kandidaten im Chat zeigen: Dateiname plus je ein Satz, warum das Bild passt (Bezug auf Stimmung/Thema). Keine Vorentscheidung treffen, die finale Auswahl liegt beim Menschen.
+6. **Kein Treffer im Index:** Wenn nach zwei Suchdurchgängen kein inhaltlich vertretbarer Kandidat existiert, das offen sagen und zwei Optionen anbieten: (a) Post ohne spezifisches Bild an Ali zur manuellen Bildwahl übergeben, (b) neutralen Kandidaten aus einer neutralen Kategorie vorschlagen. Nie ein unpassendes Bild schönreden.
+
+**Was die Routine NICHT tut:**
+- Den Nutzungszähler erhöhen. Das macht ausschließlich das Make-Szenario „Content-Publishing" (ID 9521520) beim tatsächlichen Posten: gewähltes Bild → Nutzungszähler +1. So zählt nur, was wirklich live ging.
+- Das Feld „Zuletzt genutzt" anfassen (aktualisiert sich automatisch bei Änderung des Nutzungszählers).
+
 ### Phase 5 – Finaler Schliff
 
 Rufe den `/humanizer`-Skill auf, um KI-typische Muster zu entfernen (Füllwörter, vorhersehbarer Satzrhythmus, hohle Übergänge).
@@ -153,6 +179,7 @@ Vor Abgabe an Christoph prüfen:
 - [ ] Alle 3 Varianten liegen innerhalb des kategoriegerechten Register-Fensters (siehe [references/post-varianten.md](references/post-varianten.md))
 - [ ] Hook ist neu, konkret, wurde noch nicht verwendet
 - [ ] Format ist Text + Bild, außer Carousel wurde ausdrücklich gewünscht oder als Ausnahme begründet (siehe Phase 4)
+- [ ] 2–3 Bildkandidaten aus dem Airtable-Bildindex verlinkt (Feld „Bildvorschläge LinkedIn"), keine zwei aus derselben Bildgruppe, Nutzungszähler berücksichtigt
 - [ ] Abschluss passt zur Kategorie (offene Frage vs. direktiver CTA)
 - [ ] Kennzahl vorhanden, wo laut Checkliste Pflicht
 - [ ] Genau eine Leitquelle/Kernaussage trägt den Post, keine zwei Studien zu einer Mischaussage verschmolzen
