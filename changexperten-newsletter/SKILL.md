@@ -36,6 +36,10 @@ PASTOR steht für: **P**roblem, **A**mplify, **S**olution, **T**ransformation/Te
 
 Kommt der Auftrag aus der Content-Pipeline (Tabelle "Content-Research"), gilt die feste Feldzuordnung der Routinen: Betreff → **„Newsletter-Betreff"**, Volltext → **„Newsletter-Entwurf"**, finale Fassung → **„Finaler Newsletter"**. Betreff nie in ein anderes Feld schreiben. Deutsche Umlaute und ß immer korrekt (ä, ö, ü, ß), nie ae/oe/ue/ss.
 
+**Kein SEO im Newsletter.** Trägt dieselbe Airtable-Zeile auch einen Blogartikel, stehen dort Felder wie „Blog-Keywords", „Keyword-Auswahl" und „Content-Ziel". Die gelten ausschließlich für den Blog. Der Newsletter wird nie auf ein Keyword optimiert, auch nicht bei Content-Ziel „SEO-Keyword": Betreff, Preview und Volltext folgen allein PASTOR und den Betreff-Regeln. Keine Keyword-Platzierung, kein Keyword im Betreff, keine Meta-Logik.
+
+**Kernaussage und Zahlen.** Die Kernaussage der Ausgabe ist die der Leitquelle aus dem Quellen-Feld – dieselbe, die auch Blog und LinkedIn-Post tragen, nur anders erzählt. Jede Zahl im Amplify-Teil muss wörtlich in dieser Quelle stehen, inklusive korrekter Bezugsgröße: Adoptionsrate ist nicht Erfolgswahrscheinlichkeit ist nicht Akzeptanz. Bezugsgrößen nie umbenennen, nie vermischen, nie runden, nie aus zwei Quellen zusammenrechnen. Liefert die Quelle keine belastbare Zahl, setze den Platzhalter **[KENNZAHL FEHLT – Quelle liefert keine]** und melde es, statt eine Zahl zu konstruieren.
+
 ## KPI (Texte immer hierauf optimieren)
 
 Öffnungsraten sind durch Apple MPP/Gmail-KI verzerrt – nie darauf optimieren. Priorität: Klickrate (Ziel 3–5%) > CTOR (10–20%) > Conversion (Test-Start, Buchung) > Öffnung (nur Monatstrend) > Abmelderate (<0,3%).
@@ -82,6 +86,8 @@ Der rote Faden ist Pflicht: das Problem aus P bleibt bis zum Schluss präsent, j
 - [ ] Betreff nach betreff-hooks.md: neu, konkret, 6–10 Wörter/40–60 Zeichen, hakt am Problem, verrät nicht das Angebot, keine Spam-Trigger
 - [ ] Preview-Text eigenständig, wiederholt den Betreff nicht
 - [ ] Amplify enthält den echten Beleg; Transformation enthält echten Proof Point/Zitat (nichts erfunden)
+- [ ] Jede Zahl steht wörtlich in der Leitquelle, mit korrekter Bezugsgröße – nichts umbenannt, vermischt oder gerundet
+- [ ] Kein SEO-Keyword in Betreff, Preview oder Volltext eingebaut, auch wenn die Airtable-Zeile eines trägt
 - [ ] CTA ist inhaltliche Brücke zum passenden Test, kein generischer Link; nur in O und P.S.
 - [ ] 150–250 Wörter, mobil lesbar
 - [ ] „Newsletter-Betreff"/„Newsletter-Entwurf" korrekt befüllt, wenn aus der Airtable-Pipeline
@@ -154,7 +160,8 @@ Jede Ausgabe: Ein-Klick-Abmeldelink · Footer-Pflichtangaben (via `changexperten
 ## Nicht-Ziele
 
 - Keine Hochfrequenz (kein "3×/Woche"); Frequenz engagement-gekoppelt. Abmelde-Spike im Betrieb = Warnsignal (Ausnahme: erster Versand nach langer Pause).
-- Keine erfundenen Zahlen/Studien/Zitate.
+- Keine erfundenen Zahlen/Studien/Zitate; keine umbenannten oder vermischten Bezugsgrößen.
+- Keine SEO-Keyword-Optimierung – das ist Sache des Blogs (`changexperten-blog`), nicht des Newsletters.
 - Kein Hard-Pitch im Hauptteil; Soft-CTA nur in O und P.S.
 - Keine Optimierung auf Öffnungsraten.
 - Kein Ein-großes-Bild-Newsletter.
