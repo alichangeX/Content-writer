@@ -34,7 +34,9 @@ PASTOR steht für: **P**roblem, **A**mplify, **S**olution, **T**ransformation/Te
 
 ## Airtable-Anbindung (Content-Routinen)
 
-Kommt der Auftrag aus der Content-Pipeline (Tabelle "Content-Research"), gilt die feste Feldzuordnung der Routinen: Betreff → **„Newsletter-Betreff"**, Volltext → **„Newsletter-Entwurf"**, finale Fassung → **„Finaler Newsletter"**. Betreff nie in ein anderes Feld schreiben. Deutsche Umlaute und ß immer korrekt (ä, ö, ü, ß), nie ae/oe/ue/ss.
+Kommt der Auftrag aus der Content-Pipeline (Tabelle "Content-Research"), gilt die feste Feldzuordnung der Routinen: Betreff → **„Newsletter-Betreff"**, Volltext → **„Newsletter-Entwurf"**, finale Fassung → **„Finaler Newsletter"**. Betreff nie in ein anderes Feld schreiben.
+
+Der **Titel der Ausgabe** ist Teil des Mailkörpers, nicht Metadaten: er wird als erste Zeile des Volltexts in „Newsletter-Entwurf" bzw. „Finaler Newsletter" mitgeschrieben, im Format `Titel: [Titel der Ausgabe]`, gefolgt von einer Leerzeile und dann der Anrede. Er gehört nie in „Newsletter-Betreff" – Betreff und Titel sind zwei verschiedene Texte mit zwei verschiedenen Aufgaben (siehe „Betreff, Preview und Titel"). Deutsche Umlaute und ß immer korrekt (ä, ö, ü, ß), nie ae/oe/ue/ss.
 
 **Kein SEO im Newsletter.** Trägt dieselbe Airtable-Zeile auch einen Blogartikel, stehen dort Felder wie „Blog-Keywords", „Keyword-Auswahl" und „Content-Ziel". Die gelten ausschließlich für den Blog. Der Newsletter wird nie auf ein Keyword optimiert, auch nicht bei Content-Ziel „SEO-Keyword": Betreff, Preview und Volltext folgen allein PASTOR und den Betreff-Regeln. Keine Keyword-Platzierung, kein Keyword im Betreff, keine Meta-Logik.
 
@@ -62,20 +64,21 @@ Kein Fragenkatalog: Thema, Beleg, Pain-Detail aus Anfrage, Content_Planning.xlsx
 - Das **Transformationsbild** (wie es aussieht, wenn es gelingt) + Proof Point
 - Der passendste **Test** für den Contextual-CTA, plus 1–2 Blog-Links zur Vertiefung
 
-**A2 Betreffzeilen:** 3–5 Varianten nach [references/betreff-hooks.md](references/betreff-hooks.md). Der Betreff hakt am Problem (P) oder erzeugt eine Neugierlücke – er verrät nie das Angebot (O). Auf Auswahl warten, dann Volltext.
+**A2 Betreffzeilen:** 3–5 Varianten nach [references/betreff-hooks.md](references/betreff-hooks.md), jede mit eigenem Preview-Vorschlag. Der Betreff hakt am Problem (P) oder erzeugt eine Neugierlücke – er verrät nie das Angebot (O). Auf Auswahl warten, dann Volltext. Der Titel der Ausgabe entsteht erst mit dem Volltext (A3), weil er den Impuls benennt und dafür die fertige Kernaussage braucht.
 
 **A3 Volltext (150–250 Wörter, in 60–90 Sek. lesbar), durchgeschrieben nach PASTOR:**
 Der rote Faden ist Pflicht: das Problem aus P bleibt bis zum Schluss präsent, jeder Abschnitt geht organisch aus dem vorigen hervor.
 
-1. Anrede mit Vorname-Platzhalter ("Hallo Max,")
-2. Preview-Text separat mitliefern (~90–140 Zeichen, eigenständig, wiederholt Betreff nicht)
-3. **P – Problem:** Steig direkt beim Problem des Lesers ein, mit dem viszeralen Alltagsdetail. Eine kuratierte Beobachtung ("Was mir zuletzt aufgefallen ist") darf den Einstieg bilden – aber nur, wenn sie genau dieses Problem benennt, nicht als loser Vorspann.
-4. **A – Amplify:** Ein bis zwei Sätze, was es kostet, wenn es so bleibt (Stakes, kein Drama). Hier sitzt der Beleg/die Zahl, die zeigt: Das ist real und du bist nicht allein damit.
-5. **S – Solution (der Impuls):** Die eine Kernaussage, dann 2–3 nummerierte, sofort umsetzbare Tipps (Kernbegriff fetten, je 2–4 Sätze mit Mini-Beispiel). Jeder Tipp löst einen Teil des Problems aus P – der Bezug wird sichtbar gemacht, nicht vorausgesetzt.
-6. **T – Transformation/Testimony:** Wie der Alltag aussieht, wenn der Impuls greift, plus ein echter Proof Point oder ein freigegebenes Zitat. Schließt den Bogen zum Problem: "aus [Problem] wird [Ergebnis]".
-7. **O – Offer (Contextual Soft-CTA):** Die inhaltliche Brücke vom Impuls zum passenden Test (Regel unten), nie Hard-Pitch im Hauptteil. 1–2 Blog-Links als optionale Vertiefung, thematisch am Faden.
-8. **R – Response:** Ein konkreter nächster Schritt. P.S. als zweiter, kleiner Impuls oder persönlicher Nachsatz; hier darf der Soft-CTA verstärkt oder der Reply-YES-Hack gesetzt werden.
-9. Signatur: "Viele Grüße, Christoph Gredel & das changeXperten-Team"
+1. **Titel der Ausgabe** als erste Zeile, über der Anrede. Er benennt den Impuls klar und schließt die Neugierlücke des Betreffs, statt sie zu wiederholen (Regeln: Abschnitt „Betreff, Preview und Titel")
+2. Anrede mit Vorname-Platzhalter ("Hallo Max,")
+3. Preview-Text separat mitliefern (~90–140 Zeichen, eigenständig, wiederholt Betreff nicht)
+4. **P – Problem:** Steig direkt beim Problem des Lesers ein, mit dem viszeralen Alltagsdetail. Eine kuratierte Beobachtung ("Was mir zuletzt aufgefallen ist") darf den Einstieg bilden – aber nur, wenn sie genau dieses Problem benennt, nicht als loser Vorspann.
+5. **A – Amplify:** Ein bis zwei Sätze, was es kostet, wenn es so bleibt (Stakes, kein Drama). Hier sitzt der Beleg/die Zahl, die zeigt: Das ist real und du bist nicht allein damit.
+6. **S – Solution (der Impuls):** Die eine Kernaussage, dann 2–3 nummerierte, sofort umsetzbare Tipps (Kernbegriff fetten, je 2–4 Sätze mit Mini-Beispiel). Jeder Tipp löst einen Teil des Problems aus P – der Bezug wird sichtbar gemacht, nicht vorausgesetzt.
+7. **T – Transformation/Testimony:** Wie der Alltag aussieht, wenn der Impuls greift, plus ein echter Proof Point oder ein freigegebenes Zitat. Schließt den Bogen zum Problem: "aus [Problem] wird [Ergebnis]".
+8. **O – Offer (Contextual Soft-CTA):** Die inhaltliche Brücke vom Impuls zum passenden Test (Regel unten), nie Hard-Pitch im Hauptteil. 1–2 Blog-Links als optionale Vertiefung, thematisch am Faden.
+9. **R – Response:** Ein konkreter nächster Schritt. P.S. als zweiter, kleiner Impuls oder persönlicher Nachsatz; hier darf der Soft-CTA verstärkt oder der Reply-YES-Hack gesetzt werden.
+10. Signatur: "Viele Grüße, Christoph Gredel & das changeXperten-Team"
 
 **A4 Deliverability-/Format-Check** (siehe unten).
 
@@ -85,6 +88,7 @@ Der rote Faden ist Pflicht: das Problem aus P bleibt bis zum Schluss präsent, j
 - [ ] Mindestens ein sofort umsetzbarer Tipp (echter Mehrwert)
 - [ ] Betreff nach betreff-hooks.md: neu, konkret, 6–10 Wörter/40–60 Zeichen, hakt am Problem, verrät nicht das Angebot, keine Spam-Trigger
 - [ ] Preview-Text eigenständig, wiederholt den Betreff nicht
+- [ ] Titel der Ausgabe vorhanden, als erste Zeile des Volltexts, 30–60 Zeichen, benennt den Impuls konkret, ist keine Variante des Betreffs, nennt nicht das Angebot
 - [ ] Amplify enthält den echten Beleg; Transformation enthält echten Proof Point/Zitat (nichts erfunden)
 - [ ] Jede Zahl steht wörtlich in der Leitquelle, mit korrekter Bezugsgröße – nichts umbenannt, vermischt oder gerundet
 - [ ] Kein SEO-Keyword in Betreff, Preview oder Volltext eingebaut, auch wenn die Airtable-Zeile eines trägt
@@ -109,13 +113,14 @@ Der Funnel ist PASTOR **über die Sequenz verteilt**: die frühen Mails etablier
 | Action | Ergebnis+Zahl + echtes Zitat + Angebot | Transformation/Testimony + Offer | Tag 14–15 |
 | Retention | Tests als "Kompass-Check", Bindung | Response + Bindung | Woche 3–4 |
 
-**B3 Pro Mail:** genau ein Ziel. Anrede → Bezug zur letzten Aktion (hält den Faden über Mails hinweg) → ein Kerninhalt → (ab Action: Ergebnis+Zitat) → ein nächster Schritt → Signatur. Wert zuerst, Angebot erst ab Action. Reply-YES-Hack wo passend.
+**B3 Pro Mail:** genau ein Ziel. Titel der Mail → Anrede → Bezug zur letzten Aktion (hält den Faden über Mails hinweg) → ein Kerninhalt → (ab Action: Ergebnis+Zitat) → ein nächster Schritt → Signatur. Der Titel benennt das Ziel dieser einen Mail, nicht das Thema der Sequenz – so erkennt der Leser beim Wiedereinstieg sofort, wo er ist. Wert zuerst, Angebot erst ab Action. Reply-YES-Hack wo passend.
 
 **B4 Deliverability-Check** + bei neuer Anmeldestrecke DSGVO-Checkliste; DOI-Bestätigungsmail werbefrei.
 
 **B5 Qualitätscheck:**
 - [ ] Sequenz folgt PASTOR über die Stufen; Faden reißt zwischen den Mails nicht ab
 - [ ] Jede Mail genau ein Ziel
+- [ ] Jede Mail hat einen eigenen Titel, der ihr Ziel benennt; kein Titel wiederholt sich in der Sequenz
 - [ ] Wert vor Angebot; Angebot erst ab Action
 - [ ] Contextual CTA statt generischer Links
 - [ ] Social Proof echt und freigegeben
@@ -132,9 +137,27 @@ Der CTA ist immer die inhaltliche Brücke vom Mail-Inhalt zum passenden Test. Mu
 
 Nie: "Hier klicken" / "Mehr erfahren" ohne Bezug, oder Copy-Paste-Link ohne Brücke.
 
-## Betreffzeilen & Preview
+## Betreff, Preview und Titel
 
-Vollständiges Framework mit Hook-Typen und Beispielen: [references/betreff-hooks.md](references/betreff-hooks.md). Grundregeln:
+Drei Texte, drei Aufgaben – sie werden nie gegeneinander ausgetauscht und nie voneinander abgeschrieben:
+
+| Text | Aufgabe | Zeitpunkt beim Leser | Neugierlücke |
+|---|---|---|---|
+| **Betreff** | Öffnung auslösen | vor dem Öffnen, im Postfach | öffnet sie |
+| **Preview** | Öffnung stützen | vor dem Öffnen, unter dem Betreff | vertieft sie |
+| **Titel** | Orientierung geben, Versprechen einlösen | nach dem Öffnen, oben in der Mail | **schließt sie** |
+
+**Titel der Ausgabe.** Der Leser hat schon geöffnet, Neugier ist nicht mehr die Aufgabe. Der Titel bestätigt, dass die Mail hält, was der Betreff versprochen hat, und benennt den Impuls konkret. Er darf das Thema also verraten – anders als der Betreff.
+
+- 30–60 Zeichen, 4–8 Wörter, bleibt mobil in einer Zeile
+- Benennt den Impuls oder das Problem als Sache, nicht als Frage oder Andeutung. Wenn der Betreff eine Lücke aufmacht („Warum euer Change an den Stillen scheitert"), sagt der Titel, worum es geht („Stiller Widerstand: die drei Signale")
+- Keine Variante des Betreffs, keine Umformulierung davon. Wer den Betreff nur leicht abwandelt, verschenkt die Zeile
+- Nennt nie das Angebot (O) und keinen Test – der CTA bleibt in O und P.S.
+- Keine Marke, keine Ausgabennummer, kein „Newsletter #12", keine Emojis, kein Gedankenstrich als Stilmittel
+- Optional als wiedererkennbares Format: `Der Impuls: [Sache]`. Passt zum Academy-Versprechen, sollte dann aber durchgehend genutzt werden, nicht mal so, mal so
+- Steht im HTML als Text, nie als Bild (siehe Deliverability)
+
+**Betreff und Preview.** Vollständiges Framework mit Hook-Typen und Beispielen: [references/betreff-hooks.md](references/betreff-hooks.md). Grundregeln:
 - 6–10 Wörter / 40–60 Zeichen (mobil nicht abgeschnitten), Nutzen/Neugier zuerst, nie die Marke, jede Zeile neu
 - Der Betreff hakt am Problem (P) oder öffnet eine Neugierlücke – er verrät nie das Angebot (O)
 - Keine Spam-Trigger ("kostenlos", "jetzt", "dringend", "!!!", GROSSSCHREIBUNG)
@@ -144,7 +167,7 @@ Vollständiges Framework mit Hook-Typen und Beispielen: [references/betreff-hook
 ## Deliverability
 
 Je Ausgabe:
-- Leichtes HTML, kein Ein-großes-Bild-Design; Kernaussage immer als Text
+- Leichtes HTML, kein Ein-großes-Bild-Design; Kernaussage und Titel immer als Text, nie als Grafik
 - CTA als Text-Link, nicht als Bild; Alt-Text für jedes Bild; Text-Bild ≥60:40; Multipart (HTML+Text), wenn möglich
 - Max. ~2 Links in einer kurzen Ausgabe; keine Spam-Trigger
 - Reply-YES-Hack: Ressourcen wo möglich an eine Antwort koppeln ("Antworte mit JA, und ich schicke dir …")
