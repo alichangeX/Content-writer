@@ -6,8 +6,9 @@ description: >
   Versand über Pipedrive. IMMER nutzen bei: Newsletter, Newsletter-Ausgabe, "changeXperten
   Academy", "Impuls", E-Mail-Sequenz, Lead-Nurture-Funnel, E-Mail-Funnel. Zwei Fälle:
   (A) laufende Regel-Ausgabe an die Bestandsliste, (B) neuer Nurture-Funnel nach einem
-  Lead-Magneten. Deckt Betreffzeilen, Volltext (PASTOR), Contextual-CTA, Deliverability,
-  KPI und Qualitätscheck ab.
+  Lead-Magneten. Deckt Betreffzeilen, Volltext (PASTOR), Contextual-CTA mit Verlinkung auf
+  Tests, Leistungen und Erstgespräch, Abbildungen aus den Airtable-Tabellen Blog-Bilder und
+  Grafik-Vorlagen, Deliverability, KPI und Qualitätscheck ab.
 license: MIT
 compatibility: Designed for Claude or similar AI agents.
 ---
@@ -29,8 +30,8 @@ PASTOR steht für: **P**roblem, **A**mplify, **S**olution, **T**ransformation/Te
 - **Themencluster:** Change · Team · Führung · Organisation/Kultur · KI-Transformation.
 - **Marke:** "changeXperten Academy". Versprechen: jede Ausgabe liefert einen sofort umsetzbaren Tipp – echter Mehrwert, keine Firmennews, keine Werbung. Format jeder Ausgabe = "der Impuls". Tagline: "Praxis-Impulse für Führung, Team und Wandel".
 - **Frequenz:** 1×/Monat, Do 7 Uhr. Auf 14-tägig nur hochfahren, wenn CTR stabil >3–5% UND Abmelderate <0,3%. Nie fixe Hochfrequenz für die Gesamtliste.
-- **Lead-Magnete (für CTAs):** Team-Assessment, Führungs-Test, Change-Management-Test, Unternehmenskultur-Test (kostenlos, ~10 Min).
-- **Echte Proof Points (nur diese, nichts erfinden):** 20 Jahre DACH-KMU-Praxis · >2.500 begleitete Führungskräfte · Mitarbeitergespräch-Qualität +64% (euronics Gruppe) · ~70% der Transformationsprojekte scheitern am Change-Management, nicht an Technik · Kundenstimmen mit Name/Rolle (z.B. Florian, paywise) nur mit Freigabe.
+- **Angebote (für CTAs):** drei Eskalationsstufen – kostenlose Tests und Leitfäden (Diagnose), Leistungsseiten und Blogartikel (Vertiefung), kostenloses Erstgespräch über die Kontaktseite (Gespräch). Vollständige Landkarte mit allen URLs, dem Thema-Angebot-Matching und der Frage, welche Stufe in welche Ausgabe gehört: [references/angebote-und-ctas.md](references/angebote-und-ctas.md). Nie einen Link aus dem Gedächtnis bilden, nie eine Leistung nennen, die dort nicht steht.
+- **Echte Proof Points (nur diese, nichts erfinden):** 20 Jahre DACH-KMU-Praxis · >2.500 begleitete Führungskräfte · Mitarbeitergespräch-Qualität +64% (euronics Gruppe) · ~70% der Transformationsprojekte scheitern am Change-Management, nicht an Technik · Kundenstimmen mit Name/Rolle (z.B. Florian, paywise) nur mit Freigabe. Weitere öffentlich belegte Zahlen und die auf changexperten.com veröffentlichten (und damit freigegebenen) Kundenstimmen: [references/angebote-und-ctas.md](references/angebote-und-ctas.md), Abschnitt „Proof Points von der Website".
 
 ## Airtable-Anbindung (Content-Routinen)
 
@@ -62,7 +63,8 @@ Kein Fragenkatalog: Thema, Beleg, Pain-Detail aus Anfrage, Content_Planning.xlsx
 - Der **Beleg** (echte Zahl/Studie), der zeigt, dass das Problem real und verbreitet ist
 - Die **eine Kernaussage** (Lösung) + 2–3 sofort umsetzbare Tipps
 - Das **Transformationsbild** (wie es aussieht, wenn es gelingt) + Proof Point
-- Der passendste **Test** für den Contextual-CTA, plus 1–2 Blog-Links zur Vertiefung
+- Das passendste **Angebot** für den Contextual-CTA nach dem Matching in [references/angebote-und-ctas.md](references/angebote-und-ctas.md) – in der Regel ein Test oder die Leitfaden-Sammlung –, plus optional eine Leistungsseite und 1–2 Blog-Links zur Vertiefung
+- Die Entscheidung, ob die Ausgabe eine **Abbildung** braucht (Standard: nein). Wenn ja: Foto oder Grafik nach [references/bildauswahl.md](references/bildauswahl.md)
 
 **A2 Betreffzeilen:** 3–5 Varianten nach [references/betreff-hooks.md](references/betreff-hooks.md), jede mit eigenem Preview-Vorschlag. Der Betreff hakt am Problem (P) oder erzeugt eine Neugierlücke – er verrät nie das Angebot (O). Auf Auswahl warten, dann Volltext. Der Titel der Ausgabe entsteht erst mit dem Volltext (A3), weil er den Impuls benennt und dafür die fertige Kernaussage braucht.
 
@@ -76,11 +78,11 @@ Der rote Faden ist Pflicht: das Problem aus P bleibt bis zum Schluss präsent, j
 5. **A – Amplify:** Ein bis zwei Sätze, was es kostet, wenn es so bleibt (Stakes, kein Drama). Hier sitzt der Beleg/die Zahl, die zeigt: Das ist real und du bist nicht allein damit.
 6. **S – Solution (der Impuls):** Die eine Kernaussage, dann 2–3 nummerierte, sofort umsetzbare Tipps (Kernbegriff fetten, je 2–4 Sätze mit Mini-Beispiel). Jeder Tipp löst einen Teil des Problems aus P – der Bezug wird sichtbar gemacht, nicht vorausgesetzt.
 7. **T – Transformation/Testimony:** Wie der Alltag aussieht, wenn der Impuls greift, plus ein echter Proof Point oder ein freigegebenes Zitat. Schließt den Bogen zum Problem: "aus [Problem] wird [Ergebnis]".
-8. **O – Offer (Contextual Soft-CTA):** Die inhaltliche Brücke vom Impuls zum passenden Test (Regel unten), nie Hard-Pitch im Hauptteil. 1–2 Blog-Links als optionale Vertiefung, thematisch am Faden.
+8. **O – Offer (Contextual Soft-CTA):** Die inhaltliche Brücke vom Impuls zum passenden Angebot (Regel unten), nie Hard-Pitch im Hauptteil. Genau ein Primär-CTA. 1–2 Blog-Links und höchstens eine Leistungsseite als optionale Vertiefung, thematisch am Faden.
 9. **R – Response:** Ein konkreter nächster Schritt. P.S. als zweiter, kleiner Impuls oder persönlicher Nachsatz; hier darf der Soft-CTA verstärkt oder der Reply-YES-Hack gesetzt werden.
 10. Signatur: "Viele Grüße, Christoph Gredel & das changeXperten-Team"
 
-**A4 Deliverability-/Format-Check** (siehe unten).
+**A4 Deliverability-/Format-Check** (siehe unten). Trägt die Ausgabe eine Abbildung, hier zusätzlich die Checkliste aus [references/bildauswahl.md](references/bildauswahl.md) durchgehen.
 
 **A5 Qualitätscheck:**
 - [ ] Roter Faden: das Problem aus P trägt die ganze Ausgabe, kein Abschnitt springt weg, kein zweites Thema
@@ -92,7 +94,11 @@ Der rote Faden ist Pflicht: das Problem aus P bleibt bis zum Schluss präsent, j
 - [ ] Amplify enthält den echten Beleg; Transformation enthält echten Proof Point/Zitat (nichts erfunden)
 - [ ] Jede Zahl steht wörtlich in der Leitquelle, mit korrekter Bezugsgröße – nichts umbenannt, vermischt oder gerundet
 - [ ] Kein SEO-Keyword in Betreff, Preview oder Volltext eingebaut, auch wenn die Airtable-Zeile eines trägt
-- [ ] CTA ist inhaltliche Brücke zum passenden Test, kein generischer Link; nur in O und P.S.
+- [ ] CTA ist inhaltliche Brücke zum passenden Angebot, kein generischer Link; nur in O und P.S.
+- [ ] Genau ein Primär-CTA; Test und Erstgespräch stehen nicht zusammen in einer Ausgabe
+- [ ] Jede URL wörtlich aus angebote-und-ctas.md übernommen, keine konstruierten Links
+- [ ] Höchstens eine Leistungsseite verlinkt, und nur als Nebensatz im Fluss
+- [ ] Abbildung nur, wenn sie eine Aufgabe erfüllt; dann Checkliste in bildauswahl.md erfüllt
 - [ ] 150–250 Wörter, mobil lesbar
 - [ ] „Newsletter-Betreff"/„Newsletter-Entwurf" korrekt befüllt, wenn aus der Airtable-Pipeline
 - [ ] Keine Dopplung zu früheren Ausgaben (im Zweifel Regel-Newsletter.docx prüfen)
@@ -122,20 +128,34 @@ Der Funnel ist PASTOR **über die Sequenz verteilt**: die frühen Mails etablier
 - [ ] Jede Mail genau ein Ziel
 - [ ] Jede Mail hat einen eigenen Titel, der ihr Ziel benennt; kein Titel wiederholt sich in der Sequenz
 - [ ] Wert vor Angebot; Angebot erst ab Action
-- [ ] Contextual CTA statt generischer Links
+- [ ] Contextual CTA statt generischer Links, URLs aus angebote-und-ctas.md
+- [ ] Erstgespräch nicht vor der Action-Stufe angeboten
 - [ ] Social Proof echt und freigegeben
 - [ ] Letzter Touchpoint = Diagnose (Tests), kein Hard-Sell
 - [ ] DSGVO erfüllt, falls neue Anmeldestrecke
 
 ## Contextual-CTA-Regel
 
-Der CTA ist immer die inhaltliche Brücke vom Mail-Inhalt zum passenden Test. Muster: "Wenn du [Ergebnis aus dem Impuls] willst, dann [Test]."
+Der CTA ist immer die inhaltliche Brücke vom Mail-Inhalt zum passenden Angebot. Muster: "Wenn du [Ergebnis aus dem Impuls] willst, dann [Angebot]."
 - Change → "Wie change-bereit euer Team ist, zeigt der kostenlose Change-Management-Test in 10 Minuten."
 - Team → "Wo eure Zusammenarbeit hakt, macht das kostenlose Team-Assessment sichtbar."
 - Führung → "Wo du als Führungskraft stehst, zeigt der kostenlose Führungs-Test."
 - Kultur/Orga → "Wo eure Kultur heute steht, zeigt der kostenlose Kulturtest."
+- Gesprächssituation (Jahresgespräch, Feedback, Kritik) → "Den Ablauf für genau dieses Gespräch findest du in den fünf Leitfäden für Mitarbeitergespräche."
 
 Nie: "Hier klicken" / "Mehr erfahren" ohne Bezug, oder Copy-Paste-Link ohne Brücke.
+
+**Drei Stufen, ein Primär-CTA.** Tests und Leitfäden (Stufe 1) sind der Standard jeder Regel-Ausgabe. Leistungsseiten und Blogartikel (Stufe 2) dürfen zusätzlich als Inline-Vertiefung im Solution-Teil auftauchen, aber nur als Nebensatz im Fluss und höchstens eine Leistungsseite pro Ausgabe – nie als eigener Absatz mit Button. Das Erstgespräch (Stufe 3) gehört in den Nurture-Funnel ab der Action-Stufe; in einer Regel-Ausgabe nur, wenn sich der Impuls ohne Gegenüber nicht lösen lässt, und höchstens in jeder vierten Ausgabe. Stufe 1 und Stufe 3 stehen nie zusammen in derselben Mail.
+
+Welches Angebot zu welchem Thema passt, wie es genau heißt und unter welcher URL es liegt: [references/angebote-und-ctas.md](references/angebote-und-ctas.md). URLs werden von dort wörtlich übernommen, nie aus dem Gedächtnis gebildet.
+
+## Abbildungen
+
+Standard ist Text ohne Bild – eine Ausgabe von 150–250 Wörtern trägt sich selbst, und jede Abbildung drückt das Text-Bild-Verhältnis Richtung Deliverability-Grenze. Eine Abbildung kommt nur dazu, wenn die Struktur der Kernaussage die Aussage trägt (Grafik) oder das Alltagsdetail aus dem P-Teil eine Stimmung braucht (Foto). Maximal eine pro Ausgabe.
+
+Quellen sind ausschließlich zwei Airtable-Tabellen in Base `appb7eOfe2Au3Lp40`: **Blog-Bilder** für Fotos und **Grafik-Vorlagen** für eigene Grafiken. Nicht die Tabelle LinkedIn-Bilder, kein Stockfoto-Direktabruf, kein KI-Bild. Auswahlkriterien, Grafik-Auftrag, Export-Spec für E-Mail (600 px, unter 200 KB, Alt-Text) und Feldzuordnung: [references/bildauswahl.md](references/bildauswahl.md).
+
+Unverändert gilt: Titel, Kernaussage, Zahlen, Zitate und CTA stehen als Text, nie im Bild.
 
 ## Betreff, Preview und Titel
 
@@ -187,7 +207,9 @@ Jede Ausgabe: Ein-Klick-Abmeldelink · Footer-Pflichtangaben (via `changexperten
 - Keine SEO-Keyword-Optimierung – das ist Sache des Blogs (`changexperten-blog`), nicht des Newsletters.
 - Kein Hard-Pitch im Hauptteil; Soft-CTA nur in O und P.S.
 - Keine Optimierung auf Öffnungsraten.
-- Kein Ein-großes-Bild-Newsletter.
+- Kein Ein-großes-Bild-Newsletter, keine Abbildung als Dekoration, keine Bildquelle außer Blog-Bilder und Grafik-Vorlagen.
+- Keine erfundenen oder aus dem Gedächtnis gebauten URLs; keine Leistung nennen, die nicht in angebote-und-ctas.md steht.
+- Keine Terminaufforderung in jeder Ausgabe – das Erstgespräch ist die Ausnahme, nicht der Standard-CTA.
 - Keine technische Umsetzung von DOI-Formularen/Pipedrive-Automations (nur Text/Struktur).
 
 ## Quellen
@@ -198,3 +220,5 @@ Originale in SharePoint: Marketing 2.0 > 6_Newsletter (Regel-Newsletter.docx) un
 
 - [references/pastor-aufbau.md](references/pastor-aufbau.md) – die sechs PASTOR-Stufen im Detail, Regeln für den roten Faden, durchgeschriebenes Beispiel einer Ausgabe
 - [references/betreff-hooks.md](references/betreff-hooks.md) – Betreffzeilen-Hook-Framework (aus den LinkedIn-Hooks für E-Mail adaptiert), Beispiele, Spam-Leitplanken
+- [references/angebote-und-ctas.md](references/angebote-und-ctas.md) – Angebotslandkarte von changexperten.com: Tests, Leitfäden, alle Leistungsseiten, Erstgespräch, mit URLs, Thema-Angebot-Matching, CTA-Eskalation und Website-Proof-Points
+- [references/bildauswahl.md](references/bildauswahl.md) – wann eine Ausgabe eine Abbildung braucht, Auswahl aus den Airtable-Tabellen Blog-Bilder und Grafik-Vorlagen, Grafik-Auftrag, Export-Spec für E-Mail
